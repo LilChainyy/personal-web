@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .about {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .about h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .projects {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .projects h2 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .project-link {
+            display: block;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #e8e8e8;
+            transform: translateX(5px);
+        }
+
+        .project-link h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .project-link p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .social-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .social-icon.github {
+            background: #24292e;
+        }
+
+        .social-icon.twitter {
+            background: #1DA1F2;
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-icon.linkedin {
+            background: #0077B5;
+        }
+
+        .social-icon.gmail {
+            background: #EA4335;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .about, .projects {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-photo">
+                [Your Photo]
+            </div>
+            <h1>Yiyan Chen</h1>
+            <div class="social-icons" style="margin-top: 20px;">
+                <a href="#" class="social-icon github" title="GitHub">
+                    <span>GH</span>
+                </a>
+                <a href="#" class="social-icon twitter" title="X (Twitter)">
+                    <span>X</span>
+                </a>
+                <a href="#" class="social-icon linkedin" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:" class="social-icon gmail" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I graduated from the University of Rochester with a Brain & Cognitive Science and Economics degree. I worked in financial advisory while exploring interest in the intersection of technology and investing.
+            </p>
+        </section>
+
+        <section class="projects">
+            <div style="margin-bottom: 30px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; font-weight: 600;">Quantitative Risk Management (Python)</h3>
+                <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px;">Concepts includes VaR/CVaR · Tail-risk · Greeks & hedging · Black-Scholes · Monte Carlo · Portfolio opt · Python</p>
+                <a href="https://github.com/LilChainyy/Risk-Mgmt.git" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 500;">work link →</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Yiyan Chen. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
